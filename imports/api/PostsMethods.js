@@ -15,4 +15,10 @@ Meteor.methods({
         imageUrl,
         createdAt: new Date(),
       });
-    }});
+    },
+    "posts.remove"({ postId }) {
+      return PostsCollection.remove({
+        postId
+      });
+    }
+  });

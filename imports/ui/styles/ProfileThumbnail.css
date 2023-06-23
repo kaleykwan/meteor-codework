@@ -1,0 +1,79 @@
+.profile-thumbnail {
+    display: flex;
+    flex-flow: column;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 15px;
+    margin-bottom: 0px;
+    background-color: #b6b3bb44;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    }
+  
+  .profile-thumbnail-user-info {
+    display: flex;
+    flex-flow: column;
+    gap: 6px;
+    margin: 15px;
+  }
+  
+  .profile-thumbnail-user-info-name {
+      text-align: center;
+      color: black;
+      font-weight: 500;
+      font-size: 17px;
+      margin: 0px;
+  }
+  
+  .profile-thumbnail-user-info-username {
+      text-align: center;
+      color: black;
+      font-size: 13px;
+      font-weight: 400;
+      margin: 0px;
+    }
+  
+  .profile-thumbnail-user-stats {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+  }
+  
+  .profile-thumbnail-user-stats-box {
+      background-color: #67449926;
+      padding: 15px;
+      border-radius: 20px;
+      color: #684499;
+      font-size: 13px;
+    }
+  
+  .profile-thumbnail-user-stats-count {
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    margin: 0px;
+  }
+  
+  .profile-thumbnail-user-stats-label {
+      text-align: center;
+      font-weight: 500;
+      font-size: 13px;
+      margin: 0px;
+    }
+  
+  .profile-thumbnail-link-box {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 6px;
+  }
+  
+  .profile-thumbnail-link-text {
+      font-size: 14px;
+      transform: translate(0px, -5px);
+      color: white;
+      margin-bottom: 0px;
+  }

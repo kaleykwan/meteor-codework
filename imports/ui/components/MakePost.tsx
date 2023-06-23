@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Meteor } from "meteor/meteor";
 import { TextareaAutosize } from "@mui/material";
-/* import { useLoggedUser } from "meteor/quave:logged-user-react";
- */
+
 export const MakePost = () => {
   const [content, setContent] = useState<string>("");
   const kaleyAuthor = {
@@ -10,19 +9,21 @@ export const MakePost = () => {
     username: 'kaley',
     imageURL: 'kaley.png',
   }
+  const profile = Meteor.user()?.profile;
+  const username = Meteor.user()?.username;
 
   const addPost = () => {
     console.log("added post:" + content);
     Meteor.call("posts.insert", {
         name: kaleyAuthor.name,
-        username: kaleyAuthor.username,
+        username: username,
         text: content,
         imageUrl: kaleyAuthor.imageURL,
     });
     setContent("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     addPost();
   };
